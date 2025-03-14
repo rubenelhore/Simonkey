@@ -1,0 +1,24 @@
+Elementos más comunes del HTML:
+
+<div> : Contenedor genérico de bloque para agrupar y estructurar contenido.
+<span> : Contenedor genérico en línea para aplicar estilos a porciones específicas de texto.
+<a> : Crea hipervínculos a otras páginas web, archivos o ubicaciones dentro de la misma página.
+<p> : Define un párrafo de texto.
+<h1> a <h6> : Encabezados jerárquicos, donde h1 es el más importante y h6 el menos importante.
+<img> : Inserta una imagen en el documento.
+<ul> : Define una lista desordenada (con viñetas).
+<ol> : Define una lista ordenada (numerada).
+<li> : Define un elemento de lista dentro de listas ordenadas o desordenadas.
+<table> : Crea una tabla para organizar datos en filas y columnas.
+<tr> : Define una fila dentro de una tabla.
+<td> : Define una celda de datos dentro de una fila de tabla.
+<form> : Crea un formulario para recopilar entradas del usuario.
+<input> : Crea varios controles de entrada como campos de texto, casillas, botones de radio, etc.
+<button> : Crea un botón interactivo.
+<textarea> : Crea un campo de texto multilínea para entrada de texto extenso.
+<select> : Crea un menú desplegable de opciones.
+<header> : Define la sección de encabezado de un documento o sección.
+<footer> : Define la sección de pie de página de un documento o sección.
+<section> : Define una sección temática de contenido dentro de un documento.
+
+

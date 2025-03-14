@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simonkey | Planes y Precios</title>
+
+    <!-- Favicon de emoji de mono -->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="img/favicon.svg" class="logo-img" alt="Logo Simonkey" width="24" height="24">
+                    <span class="logo-text">
+                        <span style="color: black;">Simon</span><span style="color: #6147FF;">key</span>
+                    </span>
+                </a>
+
+                <!-- Botón hamburguesa (oculto en desktop) -->
+                <button class="hamburger-btn" aria-label="Menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <div class="nav-links">
+                    <a href="index.html#features" class="nav-link">Características</a>
+                    <a href="index.html#how-it-works" class="nav-link">Cómo funciona</a>
+                    <a href="pricing.html" class="nav-link">Precios</a>
+                </div>
+                
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Iniciar Sesión</a>
+                    <a href="#" class="btn btn-primary">Registrarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Pricing Hero Section -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1 class="pricing-title">Planes simples y transparentes</h1>
+            <p class="pricing-subtitle">Elige el plan que mejor se adapte a tus necesidades de estudio. Sin sorpresas, sin complicaciones.</p>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label toggle-monthly">Mensual</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label toggle-annually">Anual</span>
+                <span class="savings-badge">Ahorra 20%</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="plans-container">
+                <!-- Free Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Básico</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>0<span class="period">/mes</span>
+                        </div>
+                        <p class="plan-description">Perfecto para comenzar con Simonkey</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text prominent">4 cuadernos</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text prominent">Hasta 30 conceptos por cuaderno</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Tarjetas didácticas básicas</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Extracción de conceptos con IA</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Exámenes básicos</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-outline btn-block">Comenzar gratis</a>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="plan-card popular">
+                    <div class="popular-badge">Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Estudiante</h3>
+                        <div class="plan-price monthly-price">
+                            <span class="currency">$</span>9.99<span class="period">/mes</span>
+                        </div>
+                        <div class="plan-price annual-price" style="display: none;">
+                            <span class="currency">$</span>7.99<span class="period">/mes</span>
+                        </div>
+                        <p class="plan-description">Para estudiantes que quieren maximizar su aprendizaje</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text prominent">Cuadernos ilimitados</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text prominent">Hasta 100 conceptos por cuaderno</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Todas las herramientas de estudio</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Historias y mnemotecnias avanzadas</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Análisis de progreso detallado</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Sin publicidad</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-primary btn-block">Elegir plan</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Institucional</h3>
+                        <div class="plan-price monthly-price">
+                            <span class="currency">$</span>19.99<span class="period">/mes</span>
+                        </div>
+                        <div class="plan-price annual-price" style="display: none;">
+                            <span class="currency">$</span>15.99<span class="period">/mes</span>
+                        </div>
+                        <p class="plan-description">Para profesores y centros educativos</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Todo lo incluido en Estudiante</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text prominent">Acceso multi-usuario (hasta 10)</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text prominent">Compartir cuadernos con estudiantes</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Análisis grupal de progreso</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Creación de exámenes personalizados</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">API para integración con LMS</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Soporte prioritario</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-outline btn-block">Elegir plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Comparison Table -->
+<section class="comparison">
+    <div class="container">
+        <h2 class="comparison-title">Comparación de planes</h2>
+        <div style="overflow-x: auto;">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Básico</th>
+                        <th>Estudiante</th>
+                        <th>Institucional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cuadernos</td>
+                        <td>4</td>
+                        <td>Ilimitados</td>
+                        <td>Ilimitados</td>
+                    </tr>
+                    <tr>
+                        <td>Conceptos por cuaderno</td>
+                        <td>30</td>
+                        <td>100</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Extracción con IA</td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tarjetas didácticas</td>
+                        <td><span class="check-icon">✓</span> (Básicas)</td>
+                        <td><span class="check-icon">✓</span> (Avanzadas)</td>
+                        <td><span class="check-icon">✓</span> (Avanzadas)</td>
+                    </tr>
+                    <tr>
+                        <td>Historias</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mnemotecnias</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Canciones</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Imágenes</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Análisis de progreso</td>
+                        <td>Básico</td>
+                        <td>Detallado</td>
+                        <td>Detallado + Grupal</td>
+                    </tr>
+                    <tr>
+                        <td>Exámenes y cuestionarios</td>
+                        <td><span class="check-icon">✓</span> (Básicos)</td>
+                        <td><span class="check-icon">✓</span> (Personalizados)</td>
+                        <td><span class="check-icon">✓</span> (Avanzados)</td>
+                    </tr>
+                    <tr>
+                        <td>Compartir cuadernos</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td>Hasta 3 personas</td>
+                        <td>Ilimitado</td>
+                    </tr>
+                    <tr>
+                        <td>Usuarios</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Hasta 10</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte</td>
+                        <td>Email</td>
+                        <td>Email + Chat</td>
+                        <td>Prioritario</td>
+                    </tr>
+                    <tr>
+                        <td>Sin publicidad</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>API de integración</td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="x-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+<section class="faq">
+    <div class="container">
+        <h2 class="faq-title">Preguntas frecuentes</h2>
+        
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="question-text">¿Puedo cambiar de plan en cualquier momento?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, puedes actualizar o cambiar tu plan en cualquier momento. Si actualizas a un plan superior, se te cobrará la diferencia prorrateada por el tiempo restante de tu suscripción actual. Si cambias a un plan inferior, el nuevo plan entrará en vigor al final de tu ciclo de facturación actual.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="question-text">¿Cómo funciona el período de prueba?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Todos los planes de pago incluyen un período de prueba gratuito de 14 días. No se te cobrará hasta que finalice el período de prueba, y puedes cancelar en cualquier momento antes de que termine sin ningún cargo.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="question-text">¿Qué métodos de pago aceptan?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Aceptamos tarjetas de crédito y débito (Visa, Mastercard, American Express), PayPal y, en algunos países, opciones de pago locales como transferencia bancaria.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="question-text">¿Ofrecen descuentos para estudiantes o instituciones educativas?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, ofrecemos un 20% de descuento adicional para estudiantes verificados y descuentos especiales para instituciones educativas según el volumen de usuarios. Contáctanos en educacion@simonkey.com para más información.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="question-text">¿Puedo cancelar mi suscripción en cualquier momento?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, puedes cancelar tu suscripción en cualquier momento desde la configuración de tu cuenta. Si cancelas, mantendrás el acceso a las características de tu plan hasta el final del período de facturación actual.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="question-text">¿Qué pasa con mis datos si cancelo mi suscripción?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Si cancelas tu suscripción de pago, tu cuenta se convertirá automáticamente al plan Básico gratuito. Podrás seguir accediendo a tus datos, aunque algunas funciones premium ya no estarán disponibles. Si deseas eliminar completamente tu cuenta y todos tus datos, puedes hacerlo desde la configuración de tu cuenta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <h2 class="cta-title">Potencia tu aprendizaje hoy mismo</h2>
+        <p class="cta-description">Únete a miles de estudiantes que están transformando su forma de aprender con Simonkey.</p>
+        <a href="#" class="btn btn-white btn-lg">Comenzar gratis</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <svg class="logo-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Cabeza -->
+                            <circle cx="12" cy="9" r="6" stroke="#4F46E5" stroke-width="1.5"/>
+                            
+                            <!-- Cara -->
+                            <circle cx="9.5" cy="7.5" r="1.5" fill="#4F46E5"/> <!-- Ojo izquierdo -->
+                            <circle cx="14.5" cy="7.5" r="1.5" fill="#4F46E5"/> <!-- Ojo derecho -->
+                            
+                            <!-- Nariz -->
+                            <ellipse cx="12" cy="10" rx="2" ry="1.5" fill="#4F46E5"/>
+                            
+                            <!-- Boca -->
+                            <path d="M10 11.5C11 12.5 13 12.5 14 11.5" stroke="#4F46E5" stroke-width="1" stroke-linecap="round"/>
+                            
+                            <!-- Orejas -->
+                            <circle cx="6.5" cy="6" r="2" stroke="#4F46E5" stroke-width="1"/>
+                            <circle cx="17.5" cy="6" r="2" stroke="#4F46E5" stroke-width="1"/>
+                            
+                            <!-- Cuerpo -->
+                            <path d="M9 15C9 18 9 21 12 21C15 21 15 18 15 15" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+                            
+                            <!-- Cola -->
+                            <path d="M17 14C19 13 21 15 21 17" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+                            
+                            <!-- Brazos -->
+                            <path d="M7 13C5 14 3 13 2 11" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17 13C19 14 21 13 22 11" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+                          </svg>
+                        <span class="logo-text">Simonkey</span>
+                    </a>
+                </div>
+                <p class="footer-description">Plataforma de educación personalizada potenciada por inteligencia artificial.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-column-title">Recursos</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Tutoriales</a></li>
+                    <li class="footer-link"><a href="#">Guías</a></li>
+                    <li class="footer-link"><a href="#">Ejemplos</a></li>
+                    <li class="footer-link"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-column-title">Empresa</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Sobre nosotros</a></li>
+                    <li class="footer-link"><a href="#">Blog</a></li>
+                    <li class="footer-link"><a href="#">Contacto</a></li>
+                    <li class="footer-link"><a href="#">Empleo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-column-title">Legal</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Términos de servicio</a></li>
+                    <li class="footer-link"><a href="#">Política de privacidad</a></li>
+                    <li class="footer-link"><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2025 Simonkey. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

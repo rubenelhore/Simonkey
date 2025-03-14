@@ -1,0 +1,10 @@
+Git Commands
+
+add - track your files in git
+
+commit - save your files in git
+
+push - upload file in github
+
+pull - bring changes from github to local 
+
