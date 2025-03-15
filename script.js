@@ -1,3 +1,5 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function() {
     // Hamburger - VERSIÓN SIMPLIFICADA
     const hamburgerBtn = document.querySelector('.hamburger-btn');
