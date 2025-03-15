@@ -38,17 +38,17 @@ Simonkey es una plataforma educativa de IA que revoluciona la forma en que estud
 ## 🏗️ Estructura del proyecto
 
 ```
-simonkey/
-├── public/              # Archivos estáticos
-├── src/
-│   ├── components/      # Componentes React reutilizables
-│   ├── contexts/        # Gestión de estado con Context API
-│   ├── services/        # Servicios de API y Firebase
-│   ├── pages/           # Páginas/rutas de la aplicación
-│   ├── utils/           # Utilidades y funciones auxiliares
-│   ├── App.jsx          # Componente principal
-│   └── index.js         # Punto de entrada
-└── api/                 # Funciones serverless
+SIMONKEY/
+├── img/
+    ├── favicon.svg/
+    ├── imagen.jpg/       
+├── html&css.txt
+├── index.html    
+├── notes.txt     
+├── pricing.html      
+├── README.md          
+├── script.js            
+└── styles.css               
 ```
 
 ## 🚀 Instalación y configuración
