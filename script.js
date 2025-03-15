@@ -56,4 +56,39 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Pricing toggle functionality
+    const billingToggle = document.getElementById('billing-toggle');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const annualPrices = document.querySelectorAll('.annual-price');
+    const toggleMonthly = document.querySelector('.toggle-monthly');
+    const toggleAnnually = document.querySelector('.toggle-annually');
+
+    // Initialize the toggle state
+    updatePrices(billingToggle.checked);
+
+    // Add event listener for the toggle
+    billingToggle.addEventListener('change', function() {
+        updatePrices(this.checked);
+    });
+
+    function updatePrices(showAnnual) {
+        // Update price visibility
+        monthlyPrices.forEach(el => {
+            el.style.display = showAnnual ? 'none' : 'block';
+        });
+
+        annualPrices.forEach(el => {
+            el.style.display = showAnnual ? 'block' : 'none';
+        });
+
+        // Update toggle label styling
+        if (showAnnual) {
+            toggleMonthly.classList.remove('active');
+            toggleAnnually.classList.add('active');
+        } else {
+            toggleMonthly.classList.add('active');
+            toggleAnnually.classList.remove('active');
+        }
+    }
 });

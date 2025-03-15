@@ -1,10 +1,19 @@
 Git Commands
 
-add - track your files in git
+# PARA MANDAR AJUSTES
 
-commit - save your files in git
+git status
 
-push - upload file in github
+git add .
 
-pull - bring changes from github to local 
+git status
+
+git commit -m
+
+git push
+
+# PARA JALAR AJUSTES
+
+git pull +URL
+
 
